@@ -1,13 +1,22 @@
-{
+{ // 针对 vite.config.ts 文件的编译配置
   "compilerOptions": {
+    // 开启项目编译，开启该功能，将会生成被编译文件所在的目录，同时开启declaration、declarationMap和incremental
     "composite": true,
+    // 增量编译文件的存储位置，使用该功能时，incremental必须设为true【增量编译：再次编译时只编译增加的内容】
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    // 是否跳过声明文件的类型检查，这可以在编译期间以牺牲类型系统准确性为代价来节省时间
     "skipLibCheck": true,
+    // 指定编译后代码使用的模块化规范，ESNext表示永远使用最新的
     "module": "ESNext",
+    // 指定模块解析策略，如何去解析查找文件
     "moduleResolution": "bundler",
+    // 是否允许从没有默认导出的模块中默认导入【没有默认导出：文件没有写export default xxx；默认导入：import xx from "xxx"】
     "allowSyntheticDefaultImports": true,
+    // 开启所有严格的类型检查
     "strict": true,
-    "noEmit": true
+    // true为不生成编译后的文件
+    "noEmit": true,
   },
-  "include": ["vite.config.ts"]
+  // 指定被编译文件所在的目录或直接指定文件
+  "include": ["vite.config.ts"],
 }

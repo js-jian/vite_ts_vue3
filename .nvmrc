@@ -1,0 +1,3 @@
+v18.18.0
+
+# 该文件作用：我们在终端没有指定版本时执行nvm use，nvm install，nvm exec，nvm run，nvm which 等命令时会使用.nvmrc文件指定的node版本
