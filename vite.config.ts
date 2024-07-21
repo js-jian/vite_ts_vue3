@@ -6,8 +6,9 @@ import path from "path";
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: { // 别名配置
+    alias: {
+      // 别名配置
       "@": path.resolve(__dirname, "src"),
-    }
-  }
+    },
+  },
 });

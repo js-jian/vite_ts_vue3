@@ -43,7 +43,7 @@
     // 检查未使用的函数参数【false：鼠标hover时提示但是不报错】
     "noUnusedParameters": true,
     // 检查switch中所有case是否有break
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

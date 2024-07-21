@@ -1,4 +1,5 @@
-{ // 针对 vite.config.ts 文件的编译配置
+{
+  // 针对 vite.config.ts 文件的编译配置
   "compilerOptions": {
     // 开启项目编译，开启该功能，将会生成被编译文件所在的目录，同时开启declaration、declarationMap和incremental
     "composite": true,
@@ -15,8 +16,8 @@
     // 开启所有严格的类型检查
     "strict": true,
     // true为不生成编译后的文件
-    "noEmit": true,
+    "noEmit": true
   },
   // 指定被编译文件所在的目录或直接指定文件
-  "include": ["vite.config.ts"],
+  "include": ["vite.config.ts"]
 }
