@@ -12,7 +12,7 @@ import Home from "@/views/Home.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
+    name: "/",
     component: Home,
   },
 ];
@@ -28,7 +28,7 @@ router.beforeEach(
     from: RouteLocationNormalizedLoadedGeneric,
     next: NavigationGuardNext,
   ) => {
-    if (to.hash) next();
+    next();
   },
 );
 

@@ -151,3 +151,13 @@ An import path can only end with a '.ts' extension when 'allowImportingTsExtensi
 文件 "c:/Users/11841/Desktop/code/vite_ts_vue3/test.ts" 不在项目 "c:/Users/11841/Desktop/code/vite_ts_vue3/tsconfig.node.json" 的文件列表中。项目必须列出所有文件，或使用 "include" 模式。
 
 ```
+
+6. 配置完tsconfig.app.json文件后可能会报错
+```
+分析：vscode会自动进行JavaScript文件的语义检查。因为自定义的jsconfig.json文件无法覆盖vscode自带的配置，所以会报错
+
+解决：
+  打开配置settings.json文件，让自定义的jsconfig.js文件覆盖vscode默认选项。
+  勾选 JS/TS > Implicit Project Config: Check JS
+
+```
